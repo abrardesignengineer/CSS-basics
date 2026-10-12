@@ -1,0 +1,36 @@
+# CSS Learning Notes
+
+## Box Model
+
+The CSS box model consists of four layers:
+
+1. **Content** — text, images, or other content.
+2. **Padding** — space between content and border.
+3. **Border** — edge surrounding the padding and content.
+4. **Margin** — space outside the border.
+
+Order from inside to outside:
+
+Content → Padding → Border → Margin
+
+### Syntax
+
+```css
+div {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 12px;
+}
+```
+
+### Four-side shorthand
+
+```css
+div {
+    margin: 10px 20px 30px 40px;
+}
+```
+
+Order: Top → Right → Bottom → Left.
