@@ -34,3 +34,7 @@ div {
 ```
 
 Order: Top → Right → Bottom → Left.
+
+
+Learned about CSS specifity and inheritance
+#Position Importance type specificity
