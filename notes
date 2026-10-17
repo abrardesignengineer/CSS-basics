@@ -38,3 +38,71 @@ Order: Top → Right → Bottom → Left.
 
 Learned about CSS specifity and inheritance
 #Position Importance type specificity
+
+# CSS Selectors: Grouping, Descendants & Children
+
+## 1. Grouping selectors
+
+Use commas to apply the same CSS declarations to multiple selectors.
+
+```css
+h1, h2, .title, #subtitle {
+  color: black;
+}
+```
+
+- `h1` — element selector
+- `h2` — element selector
+- `.title` — class selector
+- `#subtitle` — ID selector
+- `,` — groups selectors so they share the declarations
+
+## 2. Descendant selector
+
+A space selects matching elements anywhere inside another element, at any nesting depth.
+
+```css
+.parent p {
+  color: black;
+}
+```
+
+This selects all `<p>` elements inside `.parent`, including nested paragraphs.
+
+## 3. Child combinator (`>`)
+
+The `>` combinator selects matching elements that are **direct children** of another element.
+
+```css
+.parent > p {
+  color: black;
+}
+```
+
+This selects only `<p>` elements directly inside `.parent`, not paragraphs nested inside another element.
+
+## Key difference
+
+```css
+.parent p {
+  color: black;
+}
+```
+
+Selects all descendant paragraphs.
+
+```css
+.parent > p {
+  color: black;
+}
+```
+
+Selects only direct child paragraphs.
+
+## What I practiced
+
+- Grouping multiple selectors with commas
+- Combining element, class, and ID selectors
+- Selecting descendants using a space
+- Selecting direct children using `>`
+- Applying shared styles without repeating declarations
