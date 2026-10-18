@@ -1,0 +1,65 @@
+# CSS Selector Combinations
+
+## 1. Grouping selectors
+
+Use commas to apply the same styles to multiple selectors.
+
+```css
+h1, p, h2 {
+  color: blue;
+}
+```
+
+## 2. Child combinator (`>`)
+
+Selects only direct children of a parent.
+
+```css
+.box > p {
+  color: black;
+}
+```
+
+## 3. Descendant combinator (space)
+
+Selects matching elements anywhere inside another element, including nested descendants.
+
+```css
+.box .title {
+  color: black;
+}
+```
+
+## 4. Chaining selectors
+
+Combines selectors without a space to target the same element.
+
+```css
+li.done {
+  color: green;
+}
+```
+
+Targets an `li` element with the class `done`.
+
+## 5. Combining selector patterns
+
+Selectors can be combined to narrow down the target.
+
+```css
+ul > li.done {
+  color: green;
+}
+```
+
+Targets `li` elements with class `done` that are direct children of a `ul`.
+
+## Key takeaways
+
+- `h1, h2` — grouping
+- `.box > p` — direct child
+- `.box p` — descendant
+- `li.done` — same element, multiple conditions
+- `ul > li.done` — combined selectors and relationships
+
+Today's practice focused on selecting the intended elements precisely and avoiding unintended styling.
