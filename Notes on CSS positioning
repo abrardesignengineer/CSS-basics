@@ -1,0 +1,62 @@
+# CSS Positioning
+
+## Position properties
+
+- `static` — default; follows normal document flow.
+- `relative` — offsets an element from its original position while preserving its space.
+- `absolute` — removes the element from normal flow and positions it relative to its containing block.
+- `fixed` — positions an element relative to the viewport in the usual case.
+
+## Offset properties
+
+```css
+.element {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+```
+
+- `top` — offset from the top reference edge.
+- `right` — offset from the right reference edge.
+- `bottom` — offset from the bottom reference edge.
+- `left` — offset from the left reference edge.
+
+The effect depends on the element's positioning mode.
+
+## Parent and child positioning
+
+```css
+.blue-box {
+  position: relative;
+}
+
+.red-circle {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+```
+
+The positioned blue box establishes the containing block for the absolutely positioned red circle.
+
+## Z-index
+
+```css
+.red-circle {
+  position: absolute;
+  z-index: 2;
+}
+```
+
+- Controls stacking order when elements overlap.
+- A higher `z-index` generally appears above a lower one within the same stacking context.
+- Stacking contexts can affect how `z-index` behaves.
+
+## What I practiced
+
+- Normal flow and positioned elements
+- Relative and absolute positioning
+- Using `top` and `left` offsets
+- Positioning a child relative to its parent
+- Controlling overlap with `z-index`
