@@ -1,0 +1,55 @@
+# CSS Display Properties
+
+The `display` property controls how an element participates in layout.
+
+## 1. `display: block`
+
+- Starts on a new line by default.
+- Usually takes up the available width of its parent.
+- `width` and `height` can be set.
+
+Examples: `<div>`, `<p>`, `<h1>` (by default).
+
+```css
+.block {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+```
+
+## 2. `display: inline`
+
+- Flows alongside other inline content on the same line when space allows.
+- `width` and `height` generally do not control its size.
+- Horizontal padding and margins work; vertical padding and margins do not affect surrounding line layout in the same way as block elements.
+
+Example: `<span>` (by default).
+
+```css
+.inline {
+  display: inline;
+}
+```
+
+## 3. `display: inline-block`
+
+- Sits alongside other inline content.
+- Allows `width` and `height` to be set.
+- Useful for elements such as buttons or badges that need specific dimensions while remaining in a row.
+
+```css
+.inline-block {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+}
+```
+
+## Key takeaway
+
+- `block`: starts on a new line; dimensions can be set.
+- `inline`: flows within a line; width and height generally don't control its size.
+- `inline-block`: flows within a line and supports explicit width and height.
+
+These are default behaviors, and CSS can change an element's display type.
