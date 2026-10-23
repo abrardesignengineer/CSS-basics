@@ -1,0 +1,48 @@
+# CSS Float and Clear
+
+## 1. The `float` Property
+
+The `float` property positions an element toward the left or right of its containing block, allowing text and inline content to wrap around it.
+
+```css
+.cat {
+  float: left;
+}
+
+.dog {
+  float: right;
+}
+```
+
+- `float: left;` moves the element to the left.
+- `float: right;` moves the element to the right.
+- Text can wrap around floated elements.
+- Float is useful for images that sit alongside paragraphs.
+
+## 2. The `clear` Property
+
+The `clear` property prevents an element from sitting alongside floats on the specified side.
+
+```css
+footer {
+  clear: both;
+}
+```
+
+- `clear: left;` clears left floats.
+- `clear: right;` clears right floats.
+- `clear: both;` clears both left and right floats.
+
+In the exercise, `clear: both;` on the footer makes it appear below the floated cat and dog sections.
+
+## 3. When to Use Float
+
+Use `float` when text needs to wrap around an element, such as an image in an article.
+
+For most page layouts, use modern layout systems:
+- **Flexbox:** one-dimensional layouts (row or column).
+- **Grid:** two-dimensional layouts (rows and columns).
+
+## Key takeaway
+
+`float` allows text to wrap around an element. `clear` controls whether an element can sit alongside floats.
