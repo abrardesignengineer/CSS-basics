@@ -1,0 +1,62 @@
+# Responsive Web Design — Overview
+
+## 1. Responsive Web Design
+
+Responsive web design makes a website adapt to different screen sizes, including desktops, laptops, tablets and phones.
+
+## 2. Media Queries
+
+Media queries apply CSS rules when specified conditions are met, such as viewport width.
+
+```css
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+```
+
+Use them to adjust layouts and styles for different viewport sizes.
+
+## 3. Flexbox
+
+Flexbox is a one-dimensional CSS layout system. It arranges items in a row or column.
+
+```css
+.container {
+  display: flex;
+  gap: 16px;
+}
+```
+
+Useful for navigation bars, aligned components and flexible rows or columns.
+
+## 4. CSS Grid
+
+CSS Grid is a two-dimensional layout system that arranges items in rows and columns.
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+```
+
+Useful for card layouts, galleries and structured page sections.
+
+## 5. Bootstrap
+
+Bootstrap is a front-end framework providing CSS utilities, responsive grid classes and prebuilt components.
+
+It helps developers build responsive interfaces without writing every style from scratch.
+
+## Key Takeaways
+
+- **Responsive design:** The overall approach to adapting interfaces to different screens.
+- **Media queries:** Apply styles based on conditions.
+- **Flexbox:** Arrange items along one dimension.
+- **CSS Grid:** Arrange items across rows and columns.
+- **Bootstrap:** A framework with reusable styling tools and components.
+
+These tools can be used together. Flexbox and Grid handle layouts, media queries adjust styles when needed, and Bootstrap provides an existing toolkit for building interfaces.
